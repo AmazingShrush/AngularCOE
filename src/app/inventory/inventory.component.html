@@ -1,0 +1,20 @@
+<div align="center">
+    <h1>Products</h1>
+    <table>
+        <tr *ngFor="let products of invList; let i = index">
+            <td>{{products.id}}</td>
+            <td>{{products.name}}</td>
+            <td>{{products.price}}</td>
+            <td>{{products.category}}</td>
+            <td><img [src]="products.imagePath"></td>
+            <td>
+                <div *ngIf="isAdmin">
+                    <button (click)="delete(i)" class="btn btn-danger">Delete</button>
+                </div>
+                <div *ngIf="!isAdmin">
+                    <button class="btn btn-danger" disabled>Delete</button>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
