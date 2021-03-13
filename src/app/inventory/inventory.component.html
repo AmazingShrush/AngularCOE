@@ -4,7 +4,12 @@
         <tr *ngFor="let products of invList; let i = index">
             <td>{{products.id}}</td>
             <td>{{products.name}}</td>
-            <td>{{products.price}}</td>
+            <td>
+                {{products.price}}
+                <br>
+                <div *ngIf="isAdmin"> <app-price-updater (messageEvent)="receiveNum($event,i)" [priceValue]="products.price"></app-price-updater></div>
+               
+            </td>
             <td>{{products.category}}</td>
             <td><img [src]="products.imagePath"></td>
             <td>

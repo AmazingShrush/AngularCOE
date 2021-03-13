@@ -1,0 +1,36 @@
+<div>
+    <table border=1 align="center">
+        <th>ID</th>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Street</th>
+        <th>Suite</th>
+        <th>City</th>
+        <th>Zipcode</th>
+        <th>Geo Latitude</th>
+        <th>Geo Longitude</th>
+        <th>Phone</th>
+        <th>Website</th>
+        <th>User Company Name</th>
+        <th>Company Catchphrase</th>
+        <th>BS</th>
+        <tr *ngFor="let user of users">
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.email}}</td>
+            <td>Street: {{user.address.street}}</td>
+            <td>Suite:{{user.address.suite}}}</td>
+            <td>  City:{{user.address.city}}</td>
+            <td> Zipcode:{{user.address.zipcode}}</td>
+            <td>Geo Latitude:{{user.address.geo.lat}}</td>
+            <td> Geo Longitude:{{user.address.geo.lng}} </td>
+            <td>{{user.phone}}</td>
+            <td>{{user.website}}</td>
+            <td>{{user.company.name}}</td>
+            <td>{{user.company.catchPhrase}}</td>
+            <td>{{user.company.bs}}</td>
+        </tr>
+    </table>
+</div>

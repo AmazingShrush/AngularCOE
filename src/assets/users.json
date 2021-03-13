@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "shrusti",
+      "password": "shrusti1",
+      "email": "shrusti@gmail.com",
+      "phone": "9879879798",
+      "gender": "Female"
+    },
+    {
+      "id": 2,
+      "username": "Jimin",
+      "password": "mochi1",
+      "email": "jimin@gmail.com",
+      "phone": "98734879798",
+      "gender": "Male"
+    },
+    {
+      "id": 3,
+      "email": "louist91@gmail.com",
+      "username": "Louist91",
+      "gender": "Male",
+      "phone": "9552396465",
+      "password": "bgu3eg1u"
+    },
+    {
+      "id": 4,
+      "email": "shrusti.sangodkar11@gmail.com",
+      "username": "Hello",
+      "gender": "Female",
+      "phone": "9552396465",
+      "password": "4353"
+    },
+    {
+      "id": 5,
+      "email": "hs@gmail.com",
+      "username": "harrystyles",
+      "gender": "Male",
+      "phone": "6475839385",
+      "password": "hsloulou"
+    }
+  ]
+}

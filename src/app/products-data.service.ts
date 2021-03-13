@@ -17,8 +17,16 @@ export class ProductsDataService {
     {"id":10,"name":"BT21: Kooky Soft Toy","price":1000,"category":"Toys","imagePath":"assets/images/kooky.jpg"},
 
   ];
+
+
   getList(){
     return this.prodList;
   }
+
+  changePrice(val:number,index:number){
+    this.prodList[index].price=val;
+    return this.prodList;
+  }
+
   constructor() { }
 }
